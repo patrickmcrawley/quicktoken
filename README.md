@@ -4,14 +4,39 @@ A fast, beautiful CLI tool to count tokens in files using GPT tokenizers.
 
 ## Installation
 
+### Option 1: Install globally (recommended)
+
 ```bash
 # Clone the repository
 git clone https://github.com/patrickmcrawley/quicktoken.git
 cd quicktoken
 
-# Install with uv (recommended)
+# Install globally with uv
+uv tool install .
+
+# Add to PATH (if not already done)
+uv tool update-shell
+
+# For fish shell users, also run:
+echo 'fish_add_path ~/.local/bin' >> ~/.config/fish/config.fish
+
+# Reload your shell
+exec $SHELL
+```
+
+### Option 2: Install in virtual environment
+
+```bash
+# Clone the repository
+git clone https://github.com/patrickmcrawley/quicktoken.git
+cd quicktoken
+
+# Install with uv
 uv sync
 uv pip install -e .
+
+# Run with uv
+uv run quicktoken my-file.md
 ```
 
 ## Usage
