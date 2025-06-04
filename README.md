@@ -6,7 +6,7 @@ A fast, beautiful CLI tool to count tokens in files using GPT tokenizers.
 
 ```bash
 # Clone the repository
-git clone <repository-url>
+git clone https://github.com/patrickmcrawley/quicktoken.git
 cd quicktoken
 
 # Install with uv (recommended)
